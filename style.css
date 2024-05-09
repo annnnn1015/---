@@ -169,7 +169,7 @@ table {
     line-height: 24px;
 }
 
-.info span {
+.info li {
     display: inline-block;
     padding-left: 16px;
     background-color: #F1F1F1;
@@ -182,4 +182,13 @@ table {
     line-height: 24px;
     font-weight: 400;
     text-align: center;
+}
+
+.page_btn {
+    display: flex;
+}
+
+.page_btn a {
+    display: block;
+
 }
