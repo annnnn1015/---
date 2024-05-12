@@ -129,6 +129,137 @@ table {
     border-spacing: 0;
 }
 
+/*CSS RESET END*/
+
+
+* {
+    font-family: Noto Sans;
+    box-sizing: border-box;
+}
+
+/*header*/
+
+.header {
+    width: 1296px;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.header h1 {
+    margin-right: 318px;
+    background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/a0deba953fc5322a513e717e7c24b25fa3d946f8/2024%20web-camp/logo.svg);
+    width: 90px;
+    height: 40px;
+    background-repeat: no-repeat;
+    text-indent: 110%;
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+
+.header ul {
+    display: flex;
+    justify-content: space-around;
+    width: 480px;
+    padding: 4px 8px 4px 8px;
+    gap: 10px;
+    text-align: center;
+}
+
+.header li {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.header li:hover {
+    font-weight: 600;
+}
+
+
+/*banner*/
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    background: #FAFAFA;
+    text-align: center;
+    margin: 0 auto;
+    padding: 80px 0 80px 0;
+}
+
+.banner_title {
+    width: 670px;
+    height: 192px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+}
+
+.banner_title h2 {
+    width: 550px;
+    height: 74px;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    top: -12px;
+    left: 71px;
+
+}
+
+.highlight {
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/mark.png?raw=true);
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: 14px 20px;
+    padding-right: 20px;
+    padding-bottom: 28px;
+    background-origin: padding-box;
+}
+
+.quote-left {
+    position: relative;
+    left: -300px;
+}
+
+.quote-right {
+    position: relative;
+    left: 300px;
+    bottom: 30px;
+}
+
+.banner_content {
+    display: flex;
+    width: 636px;
+    height: 84px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.banner_content p {
+    width: 298px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.banner_content_title {
+    width: 52px;
+    display: block;
+    color: #5B5B5B;
+
+}
+
+.bolder {
+    display: block;
+    margin: 0 auto;
+    width: 24px;
+    border-bottom: 2px solid #C1C1C1;
+    margin-bottom: 8px;
+}
 
 .content {
     width: 1296px;
@@ -186,9 +317,26 @@ table {
 
 .page_btn {
     display: flex;
+    justify-content: space-between;
+    width: 152px;
+    margin: 0 auto;
 }
 
 .page_btn a {
     display: block;
+    width: 40px;
+    height: 40px;
+    padding: 2px 13px 2px 13px;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #1E1E1E;
+}
 
+.page_btn a:hover {
+    background-color: #1E1E1E;
+    border-radius: 4px;
+    color: #F1F1F1;
 }
