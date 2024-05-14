@@ -132,9 +132,17 @@ table {
 /*CSS RESET END*/
 
 
-* {
-    font-family: Noto Sans;
+*,
+*::before,
+*::after {
     box-sizing: border-box;
+}
+
+body {
+    font-family: "Noto Sans TC", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
 }
 
 /*header*/
@@ -168,11 +176,6 @@ table {
     text-align: center;
 }
 
-.header li {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-}
 
 .header li:hover {
     font-weight: 600;
@@ -241,9 +244,6 @@ table {
 
 .banner_content p {
     width: 298px;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 400;
 }
 
 .banner_content_title {
@@ -261,58 +261,55 @@ table {
     margin-bottom: 8px;
 }
 
-.content {
+/*main*/
+
+.container {
     width: 1296px;
-    margin: 0 auto;
-    padding: 120px 0 120px 0;
-    font-family: Noto Sans;
+    margin: 120px auto;
+    padding: 0 12px;
 }
 
-.project {
+.card-group {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.project li {
+.card {
     margin-bottom: 80px;
+    width: calc(50% - 12px);
 }
 
-.project img {
+.card img {
     border-radius: 8px;
+    width: 100%;
 }
 
 .info {
     padding-left: 16px;
+    color: #3B3B3B;
 }
 
 .info h2 {
     font-size: 28px;
     font-weight: 700;
-    padding: 16px 16px 8px 0;
-    line-height: 33.6px;
+    margin: 16px 16px 8px 0;
+    line-height: 1.2;
 }
 
 .info p {
-    font-size: 16px;
     color: #919191;
-    padding-bottom: 24px;
-    line-height: 24px;
+    margin-bottom: 24px;
 }
 
 .info li {
     display: inline-block;
     padding-left: 16px;
     background-color: #F1F1F1;
-    color: #3B3B3B;
     text-decoration: none;
     padding: 4px 12px 4px 12px;
     margin-right: 16px;
     border-radius: 16px;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 400;
-    text-align: center;
 }
 
 .page_btn {
@@ -328,9 +325,7 @@ table {
     height: 40px;
     padding: 2px 13px 2px 13px;
     text-decoration: none;
-    font-weight: 400;
     font-size: 24px;
-    line-height: 36px;
     text-align: center;
     color: #1E1E1E;
 }
