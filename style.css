@@ -129,7 +129,7 @@ table {
     border-spacing: 0;
 }
 
-/*CSS RESET END*/
+/*CSS RESET END------------------------------------------------------------*/
 
 
 *,
@@ -145,7 +145,7 @@ body {
     font-weight: 400;
 }
 
-/*header*/
+/*header--------------------------------------------------------------------*/
 
 .header {
     width: 1296px;
@@ -182,7 +182,7 @@ body {
 }
 
 
-/*banner*/
+/*banner-----------------------------------------------------------------------*/
 
 .banner {
     display: flex;
@@ -261,7 +261,7 @@ body {
     margin-bottom: 8px;
 }
 
-/*main*/
+/*main-----------------------------------------------------------------------*/
 
 .container {
     width: 1296px;
@@ -282,7 +282,7 @@ body {
 
 .card img {
     border-radius: 8px;
-    width: 100%;
+    max-width: 100%;
 }
 
 .info {
@@ -334,4 +334,137 @@ body {
     background-color: #1E1E1E;
     border-radius: 4px;
     color: #F1F1F1;
+}
+
+/*footer-----------------------------------------------------------------------*/
+
+footer {
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-lg.png?raw=true);
+    background-size: cover;
+    padding: 80px 312px;
+
+}
+
+.footer_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1296px;
+    margin: 0 auto;
+}
+
+.contact_logo {
+    background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/a0deba953fc5322a513e717e7c24b25fa3d946f8/2024%20web-camp/logo.svg);
+    width: 90px;
+    height: 40px;
+    background-repeat: no-repeat;
+    text-indent: 110%;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-bottom: 24px;
+}
+
+.contact_text {
+    margin-bottom: 24px;
+    font-size: 20px;
+}
+
+.contact_mail {
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #919191;
+    ;
+}
+
+.link {
+    width: 306px;
+    height: 264px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+
+.link a {
+    display: flex;
+    width: 100%;
+    padding: 8px 24px 8px 24px;
+    border-radius: 8px;
+    border: solid 1px #C1C1C1;
+    background: #FFFFFF;
+    color: #3B3B3B;
+    font-size: 20px;
+    text-decoration: none;
+    align-items: center;
+}
+
+.link img {
+    margin-right: 8px;
+}
+
+.link a:hover {
+    background: #000000;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+
+/*RWD------------------------------------------------------------------*/
+
+@media (max-width: 376px) {
+    /*RWD-header----------------------------------------------------------------*/
+
+    /*RWD-banner----------------------------------------------------------------*/
+
+    .banner {
+        padding: 40px 24px 80px 24px;
+    }
+
+    .banner_title {
+        width: 300px;
+        margin-bottom: 40px;
+    }
+
+    .banner_title h2 {
+        width: 300px;
+        height: 60px;
+        font-size: 20px;
+        top: 0px;
+        left: 0px;
+    }
+
+    .short {
+        width: 260px;
+        margin: 0 auto;
+    }
+
+    .highlight {
+        background-position: 18px 16px;
+        padding-right: 5px;
+        padding-bottom: 8px;
+    }
+
+    .quote-left {
+        left: 0px;
+    }
+
+    .quote-right {
+        display: none;
+    }
+
+    .banner_content {
+        display: flex;
+        flex-direction: column;
+        width: 235px;
+        height: 188px;
+    }
+
+    .banner_content p {
+        width: 235px;
+    }
+
+    /*RWD-main----------------------------------------------------------------*/
+    /*RWD-footer----------------------------------------------------------------*/
 }
