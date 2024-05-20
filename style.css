@@ -171,16 +171,36 @@ body {
     display: flex;
     justify-content: space-around;
     width: 480px;
-    padding: 4px 8px 4px 8px;
     gap: 10px;
     text-align: center;
 }
 
+.header li {
+    padding: 4px 8px 4px 8px;
+    height: 32px;
+}
 
 .header li:hover {
     font-weight: 600;
+    padding: 4px 8px 4px 8px;
+    background: linear-gradient(#919191, #919191) left top no-repeat,
+        linear-gradient(#919191, #919191) left top no-repeat,
+        linear-gradient(#919191, #919191) right top no-repeat,
+        linear-gradient(#919191, #919191) right top no-repeat,
+        linear-gradient(#919191, #919191) left bottom no-repeat,
+        linear-gradient(#919191, #919191) left bottom no-repeat,
+        linear-gradient(#919191, #919191) right bottom no-repeat,
+        linear-gradient(#919191, #919191) right bottom no-repeat;
+    background-size: 1px 8px, 8px 1px, 1px 8px, 8px 1px;
 }
 
+.menu {
+    margin-left: 237px;
+    display: none;
+    border: 0;
+    outline: 0;
+    background-color: #FFFFFF;
+}
 
 /*banner-----------------------------------------------------------------------*/
 
@@ -413,8 +433,32 @@ footer {
 
 /*RWD------------------------------------------------------------------*/
 
+
 @media (max-width: 376px) {
+
     /*RWD-header----------------------------------------------------------------*/
+    .header {
+        width: 375px;
+        padding-top: 11.5px;
+        padding-bottom: 11.5px;
+        align-items: center;
+    }
+
+    .header h1 {
+        margin-left: 5.76px;
+        margin-right: 0px;
+        background-size: contain;
+        width: 74px;
+        height: 33px;
+    }
+
+    .header ul {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
 
     /*RWD-banner----------------------------------------------------------------*/
 
