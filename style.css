@@ -153,6 +153,7 @@ body {
     display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
+
 }
 
 .header h1 {
@@ -195,7 +196,6 @@ body {
 }
 
 .menu {
-    margin-left: 237px;
     display: none;
     border: 0;
     outline: 0;
@@ -397,7 +397,7 @@ footer {
     ;
 }
 
-.link {
+.contact_link {
     width: 306px;
     height: 264px;
     display: flex;
@@ -407,7 +407,7 @@ footer {
 }
 
 
-.link a {
+.contact_link a {
     display: flex;
     width: 100%;
     padding: 8px 24px 8px 24px;
@@ -420,14 +420,28 @@ footer {
     align-items: center;
 }
 
-.link img {
+.contact_link img {
     margin-right: 8px;
 }
 
-.link a:hover {
+.contact_link a:hover {
     background: #000000;
     color: #FFFFFF;
     font-weight: 700;
+    im
+}
+
+.contact_img {
+    filter: invert(32%) sepia(0%) saturate(232%) hue-rotate(154deg) brightness(50%) contrast(80%);
+}
+
+.contact_link a:hover .contact_img {
+    filter: hue-rotate(90deg);
+}
+
+
+.contact_link a:hover .contact_img2 {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(200%);
 }
 
 
@@ -439,9 +453,9 @@ footer {
     /*RWD-header----------------------------------------------------------------*/
     .header {
         width: 375px;
-        padding-top: 11.5px;
-        padding-bottom: 11.5px;
+        padding: 11.5px 12px;
         align-items: center;
+        justify-content: space-between;
     }
 
     .header h1 {
@@ -510,5 +524,80 @@ footer {
     }
 
     /*RWD-main----------------------------------------------------------------*/
+    .container {
+        width: 375px;
+        margin: 0 auto;
+        padding: 80px 12px;
+    }
+
+    .card-group {
+        display: flex;
+    }
+
+    .card {
+        margin-bottom: 48px;
+        width: 100%;
+    }
+
+    .card img {
+        border-radius: 4px;
+        max-width: 100%;
+    }
+
+
+    .info h2 {
+        font-size: 24px;
+    }
+
+    .info p {
+        margin-bottom: 16px;
+    }
+
+    .info li {
+        margin-right: 8px;
+    }
+
     /*RWD-footer----------------------------------------------------------------*/
+    footer {
+        padding: 40px 12px;
+    }
+
+    .footer_container {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact_logo {
+        width: 120px;
+        height: 54px;
+        background-size: contain;
+        margin: 0 auto 24px auto;
+    }
+
+    .contact_text {
+        width: 240px;
+        margin-bottom: 24px;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .contact_mail {
+        font-size: 16px;
+    }
+
+    .contact_link {
+        width: 306px;
+        height: 240px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+
+    .contact_link a {
+        display: flex;
+        width: 100%;
+        padding: 4px 24px 4px 24px;
+    }
 }
