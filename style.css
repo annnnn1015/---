@@ -204,6 +204,10 @@ body {
     height: 40px;
 }
 
+.material-symbols-rounded {
+    font-size: 40px;
+}
+
 /*banner-----------------------------------------------------------------------*/
 
 .banner {
