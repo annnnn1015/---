@@ -200,6 +200,8 @@ body {
     border: 0;
     outline: 0;
     background-color: #FFFFFF;
+    width: 40px;
+    height: 40px;
 }
 
 /*banner-----------------------------------------------------------------------*/
@@ -305,24 +307,24 @@ body {
     max-width: 100%;
 }
 
-.info {
+.card-body {
     padding-left: 16px;
     color: #3B3B3B;
 }
 
-.info h2 {
+.card-body h2 {
     font-size: 28px;
     font-weight: 700;
     margin: 16px 16px 8px 0;
     line-height: 1.2;
 }
 
-.info p {
+.card-body p {
     color: #919191;
     margin-bottom: 24px;
 }
 
-.info li {
+.card-body li {
     display: inline-block;
     padding-left: 16px;
     background-color: #F1F1F1;
@@ -428,7 +430,6 @@ footer {
     background: #000000;
     color: #FFFFFF;
     font-weight: 700;
-    im
 }
 
 .contact_img {
@@ -452,7 +453,7 @@ footer {
 
     /*RWD-header----------------------------------------------------------------*/
     .header {
-        width: 375px;
+        max-width: 100%;
         padding: 11.5px 12px;
         align-items: center;
         justify-content: space-between;
@@ -486,7 +487,7 @@ footer {
     }
 
     .banner_title h2 {
-        width: 300px;
+        max-width: 100%;
         height: 60px;
         font-size: 20px;
         top: 0px;
@@ -525,7 +526,7 @@ footer {
 
     /*RWD-main----------------------------------------------------------------*/
     .container {
-        width: 375px;
+        max-width: 100%;
         margin: 0 auto;
         padding: 80px 12px;
     }
@@ -545,26 +546,27 @@ footer {
     }
 
 
-    .info h2 {
+    .card-body h2 {
         font-size: 24px;
     }
 
-    .info p {
+    .card-body p {
         margin-bottom: 16px;
     }
 
-    .info li {
+    .card-body li {
         margin-right: 8px;
     }
 
     /*RWD-footer----------------------------------------------------------------*/
     footer {
         padding: 40px 12px;
+        background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-sm.png?raw=true);
     }
 
     .footer_container {
         flex-direction: column;
-        width: 100%;
+        max-width: 100%;
         text-align: center;
     }
 
@@ -587,7 +589,7 @@ footer {
     }
 
     .contact_link {
-        width: 306px;
+        width: 100%;
         height: 240px;
         display: flex;
         flex-direction: column;
