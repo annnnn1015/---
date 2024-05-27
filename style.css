@@ -145,15 +145,18 @@ body {
     font-weight: 400;
 }
 
+.container {
+    max-width: 1296px;
+    margin: 0 auto;
+}
+
 /*header--------------------------------------------------------------------*/
 
 .header {
-    width: 1296px;
-    margin: 0 auto;
     display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
-
+    padding-top: 28px;
+    padding-bottom: 28px;
+    border-bottom: #F1F1F1 1px solid;
 }
 
 .header h1 {
@@ -195,6 +198,12 @@ body {
     background-size: 1px 8px, 8px 1px, 1px 8px, 8px 1px;
 }
 
+.header a {
+    display: block;
+    text-decoration: none;
+    color: #000000;
+}
+
 .menu {
     display: none;
     border: 0;
@@ -220,8 +229,7 @@ body {
 }
 
 .banner_title {
-    width: 670px;
-    height: 192px;
+    max-width: 670px;
     margin: 0 auto;
     margin-bottom: 24px;
 }
@@ -233,9 +241,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    position: relative;
     top: -12px;
     left: 71px;
+    line-height: 1.2;
 
 }
 
@@ -263,7 +271,6 @@ body {
 .banner_content {
     display: flex;
     width: 636px;
-    height: 84px;
     margin: 0 auto;
     justify-content: space-between;
 }
@@ -289,16 +296,15 @@ body {
 
 /*main-----------------------------------------------------------------------*/
 
-.container {
-    width: 1296px;
-    margin: 120px auto;
-    padding: 0 12px;
-}
+
 
 .card-group {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    padding: 0 12px;
 }
 
 .card {
@@ -309,6 +315,7 @@ body {
 .card img {
     border-radius: 8px;
     max-width: 100%;
+    display: block;
 }
 
 .card-body {
@@ -326,6 +333,10 @@ body {
 .card-body p {
     color: #919191;
     margin-bottom: 24px;
+}
+
+.card-body ul {
+    display: flex;
 }
 
 .card-body li {
@@ -368,15 +379,14 @@ footer {
     background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-lg.png?raw=true);
     background-size: cover;
     padding: 80px 312px;
-
+    border-top: #F1F1F1 1px solid;
+    margin-top: 120px;
 }
 
 .footer_container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1296px;
-    margin: 0 auto;
 }
 
 .contact_logo {
@@ -452,8 +462,57 @@ footer {
 
 /*RWD------------------------------------------------------------------*/
 
+@media (max-width: 1251px) {
 
-@media (max-width: 376px) {
+    /*RWD-footer----------------------------------------------------------------*/
+    footer {
+        padding: 40px 34.5px;
+        background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-sm.png?raw=true);
+    }
+
+    .footer_container {
+        flex-direction: column;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .contact_logo {
+        width: 120px;
+        height: 54px;
+        background-size: contain;
+        margin: 0 auto 24px auto;
+    }
+
+    .contact_text {
+        max-width: 240px;
+        margin-bottom: 24px;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .contact_mail {
+        font-size: 16px;
+    }
+
+    .contact_link {
+        max-width: 100%;
+        height: 240px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+
+    .contact_link a {
+        display: flex;
+        width: 100%;
+        padding: 4px 24px 4px 24px;
+    }
+
+
+}
+
+@media (max-width: 993px) {
 
     /*RWD-header----------------------------------------------------------------*/
     .header {
@@ -467,8 +526,6 @@ footer {
         margin-left: 5.76px;
         margin-right: 0px;
         background-size: contain;
-        width: 74px;
-        height: 33px;
     }
 
     .header ul {
@@ -482,17 +539,16 @@ footer {
     /*RWD-banner----------------------------------------------------------------*/
 
     .banner {
-        padding: 40px 24px 80px 24px;
+        padding: 40px 37.5px 80px 37.5px;
     }
 
     .banner_title {
-        width: 300px;
-        margin-bottom: 40px;
+        max-width: 300px;
+        margin-bottom: 60px;
     }
 
     .banner_title h2 {
         max-width: 100%;
-        height: 60px;
         font-size: 20px;
         top: 0px;
         left: 0px;
@@ -501,6 +557,7 @@ footer {
     .short {
         width: 260px;
         margin: 0 auto;
+        margin-top: 8px;
     }
 
     .highlight {
@@ -537,11 +594,12 @@ footer {
 
     .card-group {
         display: flex;
+        justify-content: center;
     }
 
     .card {
         margin-bottom: 48px;
-        width: 100%;
+        width: 636px;
     }
 
     .card img {
@@ -562,48 +620,15 @@ footer {
         margin-right: 8px;
     }
 
-    /*RWD-footer----------------------------------------------------------------*/
-    footer {
-        padding: 40px 12px;
-        background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-sm.png?raw=true);
+}
+
+@media (max-width: 376px) {
+
+    /*RWD-header----------------------------------------------------------------*/
+    .header h1 {
+        width: 74px;
+        height: 33px;
     }
 
-    .footer_container {
-        flex-direction: column;
-        max-width: 100%;
-        text-align: center;
-    }
 
-    .contact_logo {
-        width: 120px;
-        height: 54px;
-        background-size: contain;
-        margin: 0 auto 24px auto;
-    }
-
-    .contact_text {
-        width: 240px;
-        margin-bottom: 24px;
-        font-size: 16px;
-        line-height: 1.5;
-    }
-
-    .contact_mail {
-        font-size: 16px;
-    }
-
-    .contact_link {
-        width: 100%;
-        height: 240px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin-top: 40px;
-    }
-
-    .contact_link a {
-        display: flex;
-        width: 100%;
-        padding: 4px 24px 4px 24px;
-    }
 }
