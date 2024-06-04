@@ -207,7 +207,6 @@ body {
 .menu {
     display: none;
     border: 0;
-    outline: 0;
     background-color: #FFFFFF;
     width: 40px;
     height: 40px;
@@ -215,6 +214,10 @@ body {
 
 .material-symbols-rounded {
     font-size: 40px;
+}
+
+.close {
+    display: none;
 }
 
 /*banner-----------------------------------------------------------------------*/
@@ -522,6 +525,10 @@ footer {
         justify-content: space-between;
     }
 
+    .header.container {
+        padding: 8px 12px;
+    }
+
     .header h1 {
         margin-left: 5.76px;
         margin-right: 0px;
@@ -533,7 +540,31 @@ footer {
     }
 
     .menu {
-        display: block;
+        display: flex;
+        cursor: pointer;
+    }
+
+    .header_list.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 56px;
+        width: 100%;
+        background-color: #FFFFFF;
+        z-index: 1;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+
+    .header_list li {
+        width: 80px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+
+    .material-symbols-outlined {
+        font-size: 40px;
     }
 
     /*RWD-banner----------------------------------------------------------------*/
